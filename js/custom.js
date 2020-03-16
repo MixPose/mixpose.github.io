@@ -7,10 +7,9 @@ $(function () {
 })
 
  $(document).ready(function(){
-        $('.dropdown-toggle').dropdown()
-    });
-
-
+    document.getElementById('yoga-intro-video').play();
+    $('.dropdown-toggle').dropdown();
+});
 
 // stickynav
 $(window).bind('scroll', function () {

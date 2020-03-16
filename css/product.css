@@ -66,7 +66,9 @@ body{
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px; height: 0; overflow: hidden;
+  padding-top: 30px; 
+  height: 0; 
+  /* overflow: hidden; */
 }
    
 .video-container iframe,
@@ -77,6 +79,52 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.fa-circle-icon {
+  display: inline-block;
+  border-radius: 70px;
+  /* box-shadow: 0px 0px 2px #888; */
+  background: #00cb39;
+  padding: .7em;
+  color: white;
+  width: 49px;
+  height: 49px;
+}
+.fa-circle-icon:hover {
+  opacity: 90%;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header-social-links a:hover{
+  text-decoration: none;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  display: inline-block;
+  border-radius: 70px;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* vertical green line */
+.vl-green {
+  border-left: 4px solid #00cb39;
+  height: 20px;
+  position: relative;
+  left: 50%;
+}
+
+#yoga-intro-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 /* jumbotron */
@@ -110,7 +158,6 @@ body{
 }
 
 /*threejs canvas*/
-
 #ThreeJsCanvas{
   margin: auto;
   bottom: 0px;
@@ -147,7 +194,8 @@ body{
 }
 /* button */
 .btn {
-  padding: .5em 1.5em .5em; }
+  padding: .5em 1.5em .5em; 
+}
 
 .btn-outlined {
   border-radius: 0;
@@ -155,12 +203,14 @@ body{
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border: 3px solid; }
+  border: 3px solid; 
+}
 
 .btn-outlined.btn-custom:hover {
   color: #FFF;
   background: #212b35;
-  border-color: #212b35; }
+  border-color: #212b35; 
+}
 
 .btn-outlined.btn-custom {
   background: none;
@@ -171,7 +221,8 @@ body{
 .btn-outlined.btn-custom:active {
   background: #212b35;
   border-color: #212b35;
-  color: white; }
+  color: white; 
+}
 
 .text-green{
   color: #00cb39; 
