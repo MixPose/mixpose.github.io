@@ -242,13 +242,12 @@
 
 <div class="container-fluid bg-light">
     <div class="row">
-        <div class="col-sm-8 text-right invisible viewpoint-fadeInLeft">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 text-right invisible viewpoint-fadeInLeft">
             <!-- <i class="material-icons md-custom md-100">timer</i> -->
             <img class="img-fluid" src="img/iphone.png">
         </div>
-        <div class="col-sm-4 invisible viewpoint-fadeInUp">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 invisible viewpoint-fadeInUp">
             <h2><strong>About</strong></h2>
-
 
             <h4 class="mt-4 pt-4"><strong>MixPose</strong>
                 is a streaming platform to empower fitness professionals, yoga instructors and dance teachers through power of AI. 
@@ -278,7 +277,7 @@
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
                 <p>
                     With MixPose, yoga and fitness professionals can teach classes via streaming platform, 
-                    which would generate income for them. It is for the benefit and well being for all the viewers. 
+                    which would generate income for them.
                 </p>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-12">
@@ -289,24 +288,29 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-12">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-12 py-4 mb-4">
                 <div class="text-center video-container">
-                    <video style="width: 100%; height: auto;" width="400" controls autoplay>
-                        <source src="img/yoga-beach.mp4" type="video/mp4">
+                    <video id="yoga-intro-video" style="width: 100%; height: auto;" controls autoplay loop>
+                        <source src="img/yoga-intro.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12 my-4">
                 <p>
-                    Mixpose also enables many places like India and Nepal, where yoga was born. China, where Tai Chi was, 
-                    and is still being practiced. This way you would have Yogis teaching live classes from India, 
-                    or dance teachers from Latin America.
+                    Mixpose also enables instructions from many places like India and Nepal, where yoga was born. 
+                    Yogis are able to teach live classes from India and dance teachers are able to instruct from Latin America.
                 </p>
             </div>
         </div>
         
     </div>
 </div>
+
+<!-- <div style="top: 0; width: 100%; height: 100%; z-index: -1;">
+    <video id="video" style="width:100%; height:100%" controls autoplay loop>
+        <source src="img/yoga-beach.mp4" type="video/mp4">
+    </video>
+</div> -->
 
 <div class="container-fluid bg-light invisible viewpoint-fadeInUp">
     <div class="container mt-4 pt-4">
@@ -402,7 +406,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
 
 <!-- three.js script -->
 <script>
