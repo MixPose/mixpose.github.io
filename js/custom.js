@@ -1,50 +1,24 @@
-$(function () {
-  'use strict'
-
-  $('[data-toggle="offcanvas"]').on('click', function () {
-    $('.row-offcanvas').toggleClass('active')
-  })
-})
-
- $(document).ready(function(){
-    document.getElementById('yoga-intro-video').play();
-    $('.dropdown-toggle').dropdown();
+$(document).ready(function(){
+    screenshotCarousel();
 });
 
-// stickynav
-$(window).bind('scroll', function () {
-
-    if ($(window).scrollTop() > 100)
-        $('.mainmenu').addClass('nav-down');
-    else
-        $('.mainmenu').removeClass('nav-down');
-});
-
-
-// Hide Header on on scroll down
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('.mainmenu').outerHeight();
-
-$(window).scroll(function(event){
-
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.mainmenu').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.mainmenu').removeClass('nav-up');
+function screenshotCarousel() {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:35,
+        nav:true,
+        // autoPlay: 5000, //Set AutoPlay to 5 seconds
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        responsive:{
+            0:{
+                items:1.2
+            },
+            600:{
+                items:2.2
+            },
+            1000:{
+                items:3.5
+            }
         }
-    }
-
-    lastScrollTop = st;
-});
+    });
+}
